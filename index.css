@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+main section {
+    display: flex;
+    flex-flow: row;
+    gap: 24px;
+}
+
+body,
+html {
+    background-color: darkolivegreen;
+    ;
+}
+
+.cercle-container {
+    background-color: saddlebrown;
+}
+
+.h1 {
+    font-family: 'Londrina Shadow', cursive;
+    text-align: center;
+    padding-top: 250px;
+    color: rgb(199, 232, 253);
+    font-size: 80px;
+}
+
+.animation {
+    animation: animation 10s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animation {
+    0% {
+        transform: translateX(0px) scale(1);
+    }
+    50% {
+        transform: translatex(15px) scale(0.8);
+        /*Pour déplacer le cercle de manière verticale*/
+    }
+    100% {
+        transform: translateX(0px) scale(1);
+    }
+}
+
+.Consigne {
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    text-decoration: underline;
+    color: white;
+    font-size: 40px;
+}
+
+.p1 {
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid gray;
+    border-radius: 20px;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    color: rgb(102, 84, 170);
+}
+
+.p2 {
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.btn-container {
+    /* background-color: rgb(157, 79, 230);
+    border: 1px solid rgba(157, 79, 230, 0);
+    border-radius: 5px; */
+    font-family: 'Fjalla One', sans-serif;
+    display: flex;
+    padding: 1em;
+    justify-content: center;
+    /* text-align: center; /*Ca marche aussi parceque le bouton se trouve a l'intérieur d'un element(Un container (une div)) */
+}
+
+.btn {
+    color: black;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: rgb(51, 114, 250);
+    /* background-color: white; */
+    /* border: 1px solid rgb(157, 79, 230); */
+    transition: .2s;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width:800px) {
+    .h1 {
+        font-family: 'Londrina Shadow', cursive;
+        text-align: center;
+        padding-top: 100px;
+        color: rgb(199, 232, 253);
+        font-size: 80px;
+    }
+}
